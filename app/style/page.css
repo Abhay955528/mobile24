@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  height: 3.5rem;
+  background: red;
+  color: white;
+  display: flex;
+}
+
+.left {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  gap: 31px;
+  margin-left: 2rem;
+}
+
+.left:hover {
+  /* color: black; */
+}
+
+.right {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-left: 15rem;
+  gap: 14px;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.pTag {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 6px;
+  font-size: 14px;
+}
+
+.main {
+  display: flex;
+}
+
+.main-left {
+  margin-left: 5rem;
+  margin-top: 1.3rem;
+}
+
+.main-right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.getBtn {
+  height: 3.5rem;
+  border-radius: 34px;
+  width: 11rem;
+  background: red;
+  color: white;
+  border: none;
+}
+
+.banner {
+  max-width: 100%;
+  height: auto;
+  /* position: absolute; */
+}
+
+.mobile {
+  color: red;
+  padding-top: 20rem;
+  padding-left: 51rem;
+  font-size: 40px;
+}
+
+/* .pLeft {
+  padding-left: 50rem;
+  padding-top: 14px;
+  font-size: 19px;
+}
+
+.relative {
+  position: relative;
+} */
+
+.center {
+  display: flex;
+  text-align: left;
+}
+
+.center-left {
+  padding-left: 8rem;
+  padding-top: 4rem;
+}
+
+.center-right {
+  /* border: 1px solid; */
+  height: 21rem;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 31rem;
+  display: flex;
+  background: #f8f8f8;
+  margin-left: 9rem;
+  margin-top: 2rem;
+}
+
+.center-paragraph {
+  color: red;
+  font-size: 26px;
+}
+
+.form {
+  text-align: left;
+  display: grid;
+  gap: 26px;
+}
+
+.size {
+  height: 3rem;
+  width: 19rem;
+}
+
+.submitBtn {
+  height: 3.5rem;
+  width: 8rem;
+  border-radius: 48px;
+  background: red;
+  border: none;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.submitBtn:hover {
+  background: black;
+}
+
+.imageSize {
+  height: 60px;
+}
+
+.center-2 {
+  display: flex;
+  margin-top: 5rem;
+  justify-content: center;
+}
+
+.center-main {
+  background: #f3f3f3;
+  height: 20rem;
+  justify-content: center;
+  display: grid;
+  width: 69rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.gap {
+  gap: 5rem;
+}
+
+.center-3 {
+  margin-top: 7rem;
+}
+
+.appleSize {
+  height: 25rem;
+}

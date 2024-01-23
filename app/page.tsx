@@ -1,95 +1,175 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import React from "react";
+import "./style/page.css";
+import { RiMessage2Fill } from "react-icons/ri";
+import { GrMapLocation } from "react-icons/gr";
+import { MdOutlineWatchLater } from "react-icons/md";
+import { FaPhone } from "react-icons/fa";
+import { IoLogoInstagram } from "react-icons/io5";
+import { MdOutlineWhatsapp } from "react-icons/md";
 
-export default function Home() {
+export default function page() {
+  const data1 = [
+    { icon: <RiMessage2Fill />, text: "support@mobiles24.in" },
+    {
+      icon: <GrMapLocation />,
+      text: "178 Akashganga Supela Bhilai 490021",
+    },
+    {
+      icon: <MdOutlineWatchLater />,
+      text: "Wed - Mon: 11:00 am - 10:00 pm ",
+    },
+    { icon: <FaPhone />, text: "7888 182 888" },
+  ];
+
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+      <div className="navbar">
+        <div className="left cursor">
+          {data1.map((item, i) => (
+            <p className="pTag" key={i}>
+              {item.icon}
+              {item.text}
+            </p>
+          ))}
+        </div>
+
+        <div className="right cursor">
+          <IoLogoInstagram />
+          <MdOutlineWhatsapp />
         </div>
       </div>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <main className="main">
+        <div className="main-left ">
+          <img src="/image.png" alt="" width={320} height={80} />
+        </div>
+        <div className="main-right cursor">
+          <p>Home</p>
+          <p>Track </p>
+          <p>Phone </p>
+          <p>Service</p>
+          <p>Award</p>
+          <p>Team</p>
+          <p>Member</p>
+          <p>Login</p>
+          <button className="getBtn cursor">Get a Services</button>
+        </div>
+      </main>
+
+      <div>
+        <img className="banner" src="/banner1.png" alt="" />
+        {/* <h1 className="mobile relative">Mobiles 24</h1>
+        <p className="relative pLeft">
+          Mobile Repair in 30 Min.* With Warranty
+        </p> */}
       </div>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
+      <div className="center">
+        <div className="center-left">
+          <p className="center-paragraph">10% off On Your 1st Visit.</p>
+          <h1>Track Your Phone</h1>
           <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
+            Track Your Phone's Status Without Any Call Or Message. <br /> We
+            Provide Updated data On Site
           </p>
-        </a>
+        </div>
+
+        <div className="center-right">
+          <form className="form" action="">
+            <div className="one">
+              <label htmlFor="text">
+                Enter Your Mobile 5 Digit Serial Number
+              </label>
+              <br />
+              <input
+                type="text"
+                name=""
+                id="text"
+                placeholder="For Example 10110 *"
+                className="size"
+              />
+            </div>
+
+            <div className="one">
+              <label htmlFor="text">Your Phone Number</label>
+              <br />
+              <input
+                type="text"
+                name=""
+                id="text"
+                placeholder="Phone Number (Optional)"
+                className="size"
+              />
+            </div>
+            <button className="submitBtn">Submit Now</button>
+          </form>
+        </div>
       </div>
-    </main>
+
+      <div className="center-2">
+        <div className="center-main">
+          <h1 style={{ marginLeft: "21rem", marginTop: "3rem" }}>
+            Number Speaks
+          </h1>
+          <div className="flex gap">
+            <div className="flex">
+              <img className="imageSize" src="/happycs1.png" alt="" />
+              <div>
+                <h1>5350+</h1>
+                <p>
+                  Happy <br />
+                  Costumers
+                </p>
+              </div>
+            </div>
+
+            <div className="flex">
+              <img className="imageSize" src="/Phr2.png" alt="" />
+              <div>
+                <h1>10203+</h1>
+                <p>Phones Repaired</p>
+              </div>
+            </div>
+
+            <div className="flex">
+              <img className="imageSize" src="/Del3.png" alt="" />
+              <div>
+                <h1>9813+</h1>
+                <p>
+                  Phones <br />
+                  Delivered
+                </p>
+              </div>
+            </div>
+
+            <div className="flex">
+              <img className="imageSize" src="/rating4.png" alt="" />
+              <div>
+                <h1>4.7</h1>
+                <p>Rating</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+
+      <div className="center-3 flex">
+        <div className="center-3left">
+          <p>Why Us</p>
+          <h1>
+            We are <span>Certified</span>
+          </h1>
+          <h1>And Provide</h1>
+          <h1>
+            <span>Warranty On</span>
+          </h1>
+          <button className="submitBtn">Contact Us</button>
+        </div>
+        <div className="center-3right">
+          <img className="appleSize" src="/F6.jpg" alt="" />
+        </div>
+      </div>
+    </>
   );
 }

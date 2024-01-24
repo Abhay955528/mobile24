@@ -133,7 +133,6 @@ export default function page() {
                 height={100}
                 src="/happycs1.png"
                 sizes="10vw"
-                // Make the image display full width
                 style={{
                   width: "100%",
                   height: "18vh",

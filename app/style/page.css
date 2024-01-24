@@ -161,14 +161,14 @@
   display: flex;
   margin-top: 5rem;
   justify-content: center;
+  background: #f3f3f3;
 }
 
 .center-main {
-  background: #f3f3f3;
   height: 20rem;
   justify-content: center;
   display: grid;
-  width: 69rem;
+  width: 60rem;
 }
 
 .flex {
@@ -199,7 +199,7 @@ span {
 
 .appleSize {
   height: 33rem;
-  margin-right: 6rem;
+  margin-right: 0rem;
 }
 
 .btnMargin {
@@ -339,7 +339,7 @@ span {
   border: none;
 }
 .CopyRightSection {
-  width: 100%;
+  width: 99%;
   height: 20vh;
   border-right-color: black;
   background-color: black;
